@@ -1,10 +1,5 @@
 # SAUTI_SALAMA
 
-Certainly! Here's an updated README file that emphasizes that the app deals with Sexual and Gender-Based Violence (SGBV):
-
-```markdown
-# SAUTI SALAMA Django App
-
 SAUTI SALAMA is a Django web application designed to address and manage cases of Sexual and Gender-Based Violence (SGBV). The app provides a platform for reporting SGBV incidents, accessing legal counsel, and connecting with mental health practitioners.
 
 ## Getting Started
