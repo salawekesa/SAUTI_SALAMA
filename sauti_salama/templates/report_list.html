@@ -1,0 +1,21 @@
+
+
+
+  <h2>SGBV Reports</h2>
+  {% for report in reports %}
+    <div class="sgbv-report">
+      {% if report.is_anonymous %}
+        <p><strong>Report ID:</strong> {{ report.id }}</p>
+      {% else %}
+        <p><strong>User:</strong> {{ report.user }}</p>
+      {% endif %}
+      <p><strong>Incident Type:</strong> {{ report.incident_type }}</p>
+      <p><strong>Evidence:</strong> {{ report.evidence }}</p>
+      <p><strong>Evidence:</strong> {{ report.media_files }}</p>
+
+      <!-- Include other report fields as paragraphs -->
+    </div>
+    <hr>
+  {% empty %}
+    <p>No reports available.</p>
+  {% endfor %}
