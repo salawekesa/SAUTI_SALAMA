@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>HELLO</p>
+        <h2>{{ reports.id }}</h2>
+        <p>{{ reports.evidence }}</p>
+        <p>{{ reports.description }}</p>
+        <p>{{ reports.location }}</p>
+        <p>{{ reports.incident_type }}</p>
+    
+        {% if reports.evidence %}
+            <img src="{{ report.evidence.url }}" alt="{{ listing.title }}" />
+        {% endif %}
+        <button id="contactSurvivorButton">Contact Survivor</button>
+    </div>
+</body>
+</html>

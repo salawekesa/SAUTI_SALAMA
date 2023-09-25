@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+</head>
+<body>
+    <h1>Signup</h1>
+    <form method="post" action="{% url 'signup' %}">
+        {% csrf_token %}
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br>
+
+        <label for="password1">Password:</label>
+        <input type="password" id="password1" name="password1" required><br>
+
+        <label for="password2">Confirm Password:</label>
+        <input type="password" id="password2" name="password2" required><br>
+
+        <label for="role">Role:</label>
+        <select id="role" name="role" required>
+            <option value="survivor">Survivor</option>
+            <option value="counsel">Legal Counsel</option>
+            <option value="practitioner">Mental Health Practitioner</option>
+        </select><br>
+
+        <button type="submit">Signup</button>
+    </form>
+</body>
+</html>

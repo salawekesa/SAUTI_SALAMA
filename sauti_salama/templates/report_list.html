@@ -11,8 +11,12 @@
       {% endif %}
       <p><strong>Incident Type:</strong> {{ report.incident_type }}</p>
       <p><strong>Evidence:</strong> {{ report.evidence }}</p>
-      <p><strong>Evidence:</strong> {{ report.media_files }}</p>
-
+      <!-- <p><strong>Evidence:</strong> {{ report.media_files }}</p> -->
+      <p><strong>Description:</strong> {{ report.description }}</p>
+      <p><strong>Comments:</strong> {{ report.comments }}</p>
+      <a href="/single_report/{{ report.id }}/" class="link-a">Click here to view
+        <span class="ion-ios-arrow-forward"></span>
+      </a>
       <!-- Include other report fields as paragraphs -->
     </div>
     <hr>
