@@ -43,6 +43,7 @@ class SGBVReport(models.Model):
     comments = models.TextField(blank=True, null=True)
     is_anonymous = models.BooleanField(default=False)
     timestamp = models.DateTimeField(auto_now_add=True) 
+    email = models.EmailField()
 
 
     # media_files = models.ManyToManyField(MediaFile, blank=True)
